@@ -25,7 +25,7 @@ public final class RemoteFeedLoader: FeedLoader {
 				completion(.success([]))
 
 			case let .failure(error):
-				completion(.failure(error))
+				completion(.failure(Error.connectivity))
 			}
 		}
 	}
