@@ -24,10 +24,10 @@ extension LoadFeedFromRemoteUseCaseTests {
 			
 			exp.fulfill()
 		}
-		
+
 		action()
-		
-		waitForExpectations(timeout: 0.1)
+
+		wait(for: [exp], timeout: 1.0)
 	}
 	
 }
